@@ -5,18 +5,17 @@ const TuComponente = () => {
   return (
     <View style={styles.container}>
       <View style={[styles.section, styles.redSection]}>
-        {/* Contenido de la primera sección */}
         <Text style={styles.text}>App de Ventas</Text>
-        <Text style={[styles.text, styles.textod]}>Tu Sitio Ideal</Text>
-      </View>
+        <Text style={[styles.text, styles.textod]}>Tu Sitio Ideal</Text> 
+    </View>
 
       <View style={[styles.section, styles.blackSection]}>
-      <View style={{ marginTop: 100}}>
+      <View style={{ marginTop: 50}}>
       <TouchableOpacity style={[styles.button, { marginBottom: 10 }]}>
           <Text style={styles.buttonText}>Iniciar Sesion</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Registrarse</Text>
+          <Text style={styles.buttonText}> Registrarse </Text>
         </TouchableOpacity>
       </View>
       </View>
@@ -26,46 +25,45 @@ const TuComponente = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'column', // Esto asegura que los elementos se coloquen de forma vertical
   },
     section: {
-    borderWidth: 0,
     borderColor: '#ccc',
-    width: '1875px',
+    width: '100%',
     alignItems: 'center',
   },
     redSection: {
      backgroundColor: 'red', // Fondo rojo para la primera sección
-     aspectRatio: 5,
-     paddingVertical: 300,
+     paddingVertical: '55%',
+     justifyContent: 'center',
   },
     
   text: {
     fontSize: 50,
     fontWeight: 'bold',
-    fontFamily: 'Arial',
     color: 'white',
+    top:'70%',
   },
   textod:{
     fontSize: 25,
-    ontWeight: 'bold',
-    fontFamily: 'Arial',
+    fontWeight: 'bold',
     color: 'white',
-  },
-    
+  }, 
   button: {
     backgroundColor: 'red',
-    padding: 10,
-    borderRadius: 5,
-    height:'60%',
-    width: '250%',
-    right: 80,
-    alignItems: 'center',
+    padding:'1%',
+    borderRadius: 8,
+    height:'25%',
+    width: '100%',
+    justifyContent: 'space-between',
+    paddingStart:'55%',
   },
   buttonText: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 20,
+    height:50,
+    right:'60%',
+    top:'30%',
   },
 });
 
